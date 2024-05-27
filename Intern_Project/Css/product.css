@@ -1,0 +1,216 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#container
+{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,1fr);
+    /* height: 120px; */
+}
+.box .image-hover {
+position: relative;
+overflow: hidden;
+}
+
+.box .image-hover .back-image {
+position: absolute;
+top: 0;
+left: 0;
+opacity: 0;
+transition: opacity 0.3s ease;
+}
+.image-hover
+{
+width: 90%;
+margin: auto;
+background-color:#E7EAE9;
+}
+
+@media(min-width:0px) and (max-width:575px)
+{
+#container
+{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(1,1fr);
+    margin-top: 25px;
+    
+    
+    
+}
+.image-hover
+{
+width: 90%;
+margin: auto;
+background-color:#E7EAE9;
+}
+}
+
+@media(min-width:576px) and (max-width:768px)
+{
+#container
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    /* height: 120px; */
+}
+.image-hover
+{
+width: 90%;
+margin: auto;
+background-color:#E7EAE9;
+}
+}
+
+@media(min-width:769px) and (max-width:991px)
+{
+#container
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    /* height: 120px; */
+}
+.image-hover
+{
+width: 90%;
+margin: auto;
+background-color:#E7EAE9;
+}
+}
+
+
+@media(min-width:992px) and (max-width:1200px)
+{
+#container
+{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,1fr);
+    /* height: 120px; */
+}
+.image-hover
+{
+width: 90%;
+margin: auto;
+background-color:#E7EAE9;
+}
+}
+.banner
+{
+  background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("https://manlybands.com/cdn/shop/files/memorial_day_hero_v3.webp?v=1714592359&width=1500");
+  background-repeat:no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 80vh;
+  position: relative;
+}
+.links-main
+{
+  position: relative;
+  top: 0%;
+  left: 0%;
+}
+.vice-link-main
+{
+  position: absolute;
+  top: 140%;
+  left: -280%;
+  background-color: white;
+  /* color: white; */
+  width: 1420px;
+  display: none;
+  transition: all 0.5s;
+  padding: 20px 50px;
+  z-index: 99;
+}
+
+
+.bi-chevron-down
+{
+  display: inline-block;
+  width: 17px;
+margin-top: 12px;
+/* transition: all 0.8s; */
+}
+.link-dark:hover .bi-chevron-down
+{
+  transform: rotate(180deg);
+}
+.vice-link-main2
+{
+  position: absolute;
+  top: 140%;
+  left: -390%;
+  background-color: white;
+  /* color: white; */
+  width: 1470px;
+  display: none;
+  /* transition: all 1s; */
+  padding: 30px 55px;
+  z-index: 99;
+  
+  
+}
+.vice-link-main3
+{
+  position: absolute;
+  top: 140%;
+  left: -900%;
+  background-color: white;
+  /* color: white; */
+  width: 1550px;
+  display: none;
+  /* transition: all 1s; */
+  padding: 20px 50px;
+  z-index: 99;
+   
+  
+}
+.list_hov ul li{
+  list-style-type: none;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  padding-top: 19px;
+  cursor: pointer;
+  
+}
+.vice-link-main2 ul li{
+  list-style-type: none;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  padding-top: 19px;
+  cursor: pointer;
+}
+.vice-link-main3 ul li{
+  list-style-type: none;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  padding-top: 19px;
+  cursor: pointer;
+}
+.links-main:hover .vice-link-main,.links-main:hover .vice-link-main2,.links-main:hover .vice-link-main3
+{
+  display: block;
+
+  
+  
+  
+  
+}
+.short_price{
+  font-size: 20px;
+  /* color: white; */
+  text-align: center;
+
+}
+
+
+

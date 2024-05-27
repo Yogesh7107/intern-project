@@ -1,0 +1,283 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body
+{
+  overflow-x: hidden;
+}
+.banner
+{
+  background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("https://manlybands.com/cdn/shop/files/memorial_day_hero_v3.webp?v=1714592359&width=1500");
+  background-repeat:no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 80vh;
+  position: relative;
+}
+.links-main
+{
+  position: relative;
+  top: 0%;
+  left: 0%;
+}
+.vice-link-main
+{
+  position: absolute;
+  top: 140%;
+  left: -280%;
+  background-color: white;
+  /* color: white; */
+  width: 1420px;
+  display: none;
+  transition: all 0.5s;
+  padding: 20px 50px;
+  z-index: 99;
+}
+
+
+.bi-chevron-down
+{
+  display: inline-block;
+  width: 17px;
+margin-top: 12px;
+/* transition: all 0.8s; */
+}
+.link-dark:hover .bi-chevron-down
+{
+  transform: rotate(180deg);
+}
+.vice-link-main2
+{
+  position: absolute;
+  top: 140%;
+  left: -390%;
+  background-color: white;
+  /* color: white; */
+  width: 1470px;
+  display: none;
+  /* transition: all 1s; */
+  padding: 30px 55px;
+  z-index: 99;
+  
+  
+}
+.vice-link-main3
+{
+  position: absolute;
+  top: 140%;
+  left: -900%;
+  background-color: white;
+  /* color: white; */
+  width: 1550px;
+  display: none;
+  /* transition: all 1s; */
+  padding: 20px 50px;
+  z-index: 99;
+   
+  
+}
+.list_hov ul li{
+  list-style-type: none;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  padding-top: 19px;
+  cursor: pointer;
+  
+}
+.vice-link-main2 ul li{
+  list-style-type: none;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  padding-top: 19px;
+  cursor: pointer;
+}
+.vice-link-main3 ul li{
+  list-style-type: none;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  padding-top: 19px;
+  cursor: pointer;
+}
+.links-main:hover .vice-link-main,.links-main:hover .vice-link-main2,.links-main:hover .vice-link-main3
+{
+  display: block;
+
+  
+  
+  
+  
+}
+.banner-intro
+{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+.image{
+  width: 400px;
+  height: 370px;
+}
+.text_p{
+  font-weight: bold;
+}
+.t_text{
+  font-size: 45px;
+  font-weight: bold;
+}
+.ul-li{
+  cursor: pointer;
+  padding-top: 40px;
+  
+}
+.brdr{
+  border-top: 1px solid rgb(95, 90, 90);
+  margin-top: 70px;
+ 
+  
+  /* width: 100%; */
+  
+}
+.bottom{
+  border-top: 1px solid black;
+  color: #121212BF;
+  font-size: 12px;
+  padding-left: 90px;
+}
+.footer_f{
+  text-align: center;
+  font-size: 14px;
+ border-top: 1px solid black;
+  
+  
+}
+.icons ul li a i{
+  position: relative;
+  top: 55px;
+  font-size: 20px;
+  
+}
+
+.main-tabslider {
+  align-items: center;
+  /* background: #e3e3e3; */
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+@-webkit-keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(calc(-250px * 7));
+    transform: translateX(calc(-250px * 7));
+  }
+}
+@keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(calc(-250px * 7));
+    transform: translateX(calc(-250px * 7));
+  }
+}
+.slider2 {
+  /* box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125); */
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+.slider2::before,
+.slider2::after {
+  /* background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%); */
+  content: "";
+  position: absolute;
+  z-index: 2;
+}
+.slider2::after {
+  right: 0;
+  top: 0;
+  -webkit-transform: rotateZ(180deg);
+  transform: rotateZ(180deg);
+}
+.slider2::before {
+  left: 0;
+  top: 0;
+}
+.slider2 .slide-track {
+  -webkit-animation: scroll 40s linear infinite;
+  animation: scroll 20s linear infinite;
+  display: flex;
+  width: calc(250px * 14);
+}
+.slider2 .slide {
+  width: 400px;
+  margin: 10px 20px;
+}
+.slide-track .slide
+{
+  text-align: center;
+  cursor: pointer;
+}
+.slide-track .slide span
+{
+  font-size: 30px;
+}
+.slide-track .slide p
+{
+  font-size: 20px;
+  position: relative;
+  top: 0%;
+  left: 0%;
+  margin: 0%;
+}
+.slide-track .slide p span
+{
+  width: 24%;
+  height: 2px;
+  background-color: #000000;
+  position: absolute;
+  top: 100%;
+  left: 38%;
+}
+.slide-track:hover
+{
+  animation-play-state: paused;
+}
+.slider-man10
+{
+  height: 78.9%;
+}
+.discover-p
+{
+  margin-top: 20px;
+  font-size: 27px;
+}
+.discover-medail
+{
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+.d-more
+{
+  color: black;
+  font-size: 18px;
+}
+.d-more:hover
+{
+  color: #000;
+}
+
+
+
+
+
